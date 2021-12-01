@@ -6,7 +6,6 @@
             "type": "String"
         }
     },
-    
     "resources": [
         {
             "id": "[concat(resourceId('Microsoft.OperationalInsights/workspaces/providers', parameters('workspace'), 'Microsoft.SecurityInsights'),'/alertRules/7c192267-ac8a-4182-9336-f5e7647fe9e5')]",
