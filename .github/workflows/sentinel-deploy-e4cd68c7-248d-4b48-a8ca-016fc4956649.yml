@@ -26,7 +26,7 @@ jobs:
       directory: '${{ github.workspace }}'
       cloudEnv: 'AzureCloud'
       creds: ${{ secrets.AZURE_SENTINEL_CREDENTIALS_e4cd68c7248d4b48a8ca016fc4956649 }}
-      contentTypes: 'AnalyticsRule,AutomationRule'
+      contentTypes: 'AnalyticsRule,AutomationRule,HuntingQuery'
 
     steps:
     - name: Login to Azure (Attempt 1)
@@ -72,4 +72,4 @@ jobs:
       with:
         azPSVersion: 'latest'
         inlineScript: |
-          ${{ github.workspace }}//.github/workflows/azure-sentinel-deploy.ps1
+          ${{ github.workspace }}//.github/workflows/azure-sentinel-deploy-e4cd68c7-248d-4b48-a8ca-016fc4956649.ps1
